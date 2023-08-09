@@ -31,9 +31,9 @@
             </div>
             <div class="categorie" *ngIf="cate2">
                 <ul>
-                    <li class="margin" role="button" *ngFor="let categorie of categories"><a (click)="onSelect(categorie)"
-                            *ngIf="categorie.state">{{categorie.name}}</a></li>
-                    <button class="btn button1">Plus...</button>
+                    <li class="margin" role="button" *ngFor="let categorie of categories"><a
+                            (click)="onSelect(categorie)" *ngIf="categorie.state">{{categorie.name}}</a></li>
+                            <button class="btn buttn1" style="background-color: #840378; color: white; margin-left: 0.5rem;">Plus...</button>
                 </ul>
             </div>
         </div>
@@ -60,7 +60,7 @@
             <div></div>
         </div>
         <p class="mb-0" *ngIf="selectedTheme[0]" #theme>{{selectedTheme[0]}}</p>
-        <a  type="button" href="#input" class="btn btn-outline-light float-end" (click)="modifierTheme(0)">Modifier</a>
+        <a type="button" href="#input" class="btn btn-outline-light float-end" (click)="modifierTheme(0)">Modifier</a>
     </div>
 
 
@@ -94,7 +94,9 @@
             <div></div>
             <div></div>
         </div>
-        <p *ngIf="fiText" id="resume">Vous avez choisi la catégorie {{selectedCategorie.name}}, entré le theme {{selectedTheme[0]}}, et le nom {{selectedTheme[1]}}, si ces informations sont correctes appuyez entrer pour voir quelques exemples de templates</p>
+        <p *ngIf="fiText" id="resume">Vous avez choisi la catégorie {{selectedCategorie.name}}, entré le theme
+            {{selectedTheme[0]}}, et le nom {{selectedTheme[1]}}, si ces informations sont correctes appuyez entrer pour
+            voir quelques exemples de templates</p>
     </div>
     <div *ngIf="template" id="template" class="container2 b-shadow mt-2 ms-3 mb-3 pb-3">
         <app-template [showColor]="color"></app-template>
@@ -115,25 +117,23 @@
         <div class="row text-center pb-3">
             <h3 class="title3">CHOIX DE COULEURS</h3>
             <div class="col-sm-4">
-                  <label for="favcolor" class="mt-2 mb-2 fs-4 fw-3">Couleur Primaire :</label><br>
-                  <input type="color" id="favcolor" value="#fcd7f9" class="">
+                <label for="favcolor" class="mt-2 mb-2 fs-4 fw-3">Couleur Primaire :</label><br>
+                <input type="color" id="favcolor" value="#fcd7f9" class="">
             </div>
             <div class="col-sm-4">
-                  <label for="favcolor" class="mt-2 mb-2 fs-4 fw-3">Couleur Secondaire:</label><br>
-                  <input type="color" id="favcolor" value="#c738ba" class="">
+                <label for="favcolor" class="mt-2 mb-2 fs-4 fw-3">Couleur Secondaire:</label><br>
+                <input type="color" id="favcolor" value="#c738ba" class="">
             </div>
             <div class="col-sm-4">
-                  <label for="favcolor" class="mt-2 mb-2 fs-4 fw-3">Couleur Tertiaire:</label><br>
-                  <input type="color" id="favcolor" value="#840378" class="">
+                <label for="favcolor" class="mt-2 mb-2 fs-4 fw-3">Couleur Tertiaire:</label><br>
+                <input type="color" id="favcolor" value="#840378" class="">
             </div>
         </div>
         <a href="#formulaire" class="btn float-end colorB" (click)="startForm(temp)">Terminer</a>
-  </div>
+    </div>
     <form (ngSubmit)="themer()" id="input" class="inputDiscussion position-relative">
-        <div><input type="text" placeholder="Entrer votre texte "
-                class="form-control form-control-lg disabled" [(ngModel)]="inputValue" name="inputValue" id="input" [disabled]="able"> <a
-                type="button"
-                href="#input"
+        <div><input type="text" placeholder="Entrer votre texte " class="form-control form-control-lg disabled"
+                [(ngModel)]="inputValue" name="inputValue" id="input" [disabled]="able"> <a type="button" href="#input"
                 class="btn buttonChat fas fa-paper-plane" (click)="themer()"></a></div>
     </form>
 </div>
@@ -141,4 +141,3 @@
     let choice = document.getElementById('choice');
     console.log(choice);
 </script>
-

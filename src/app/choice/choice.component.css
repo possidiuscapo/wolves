@@ -78,6 +78,7 @@ ul {
   padding: 0
 }
 
+.categorie ul li .buttn1,
 .categorie ul li a,
 .categorie p {
   display: block;
@@ -285,7 +286,17 @@ input[type=color] {
 .margin{
  margin: .2rem;
 }
-
+.margin .buttn1,
+.margin a{
+  transition: all 1s;
+}
+ 
+.margin a:hover{
+  transform: scale(1.08);
+}
+.categorie .margin .buttn1{
+  background-color: var(--color-primay);
+}
 /********** Petit desktop *********/
 @media screen and (max-width: 1200px) and (min-width: 980px){
 
