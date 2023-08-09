@@ -1,0 +1,48 @@
+@import url(fonts.css);
+
+/* You can add global styles to this file, and also import other style files */
+:root {
+    --color-primay: #911184;
+    --color-secondary: #c738ba;
+    --color-tertiary: #f9e5f7;
+}
+
+body {
+    margin: 0;
+    background-color: var(--color-tertiary);
+    backdrop-filter: blur(8);
+}
+
+h1,
+h2,
+h3 {
+    font-family: Tanker;
+}
+
+
+
+.child {
+    backdrop-filter: blur(8);
+
+}
+
+h2,
+h4 {
+    width: 100%;
+    border: #6d2eac solid 0.1rem;
+    color: var(--color-primay);
+    border-radius: 0.5rem 0.5rem 0 0;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding-block: 10px;
+}
+
+h3 {
+    width: 95%;
+    border: #6d2eac solid 0.1rem;
+    color: var(--color-primay);
+    border-radius: 0.5rem 0.5rem 0 0;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding-block: 10px;
+}

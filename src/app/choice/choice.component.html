@@ -1,0 +1,144 @@
+<div class="wraper" id="choice">
+    <div class="title">
+        <h1>Chatbot</h1>
+    </div>
+    <div class="dialogue">
+        <div class="container b-shadow mt-2 ms-3 mb-3 col-sm-6">
+            <img src="../../assets/images/robot.png" width="10px" alt="Avatar">
+            <div class="parent" *ngIf="!bonj"> <!-- div utiliser pour faire le loading -->
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <p class="mb-0" *ngIf="bonj">Bonjour et bienvenue, sur notre site</p>
+        </div>
+        <div class="container b-shadow mt-2 ms-3 mb-3 col-sm-8 mx-width" *ngIf="bonj">
+            <img src="../../assets/images/robot.png" width="10px" alt="Avatar">
+            <div class="parent" *ngIf="bonj && !cate"> <!-- div utiliser pour faire le loading -->
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <p *ngIf="bonj && cate">Pour commencer la création de votre site web, veuillez nous dire de quel type
+                de site avez vous besoin</p>
+        </div>
+        <div class="container b-shadow mt-2 ms-3 mb-3 col-sm-8 mx-width" *ngIf="cate">
+            <img src="../../assets/images/robot.png" width="5px" alt="Avatar">
+            <div class="parent" *ngIf="!cate2"> <!-- div utiliser pour faire le loading -->
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="categorie" *ngIf="cate2">
+                <ul>
+                    <li class="margin" role="button" *ngFor="let categorie of categories"><a (click)="onSelect(categorie)"
+                            *ngIf="categorie.state">{{categorie.name}}</a></li>
+                    <button class="btn button1">Plus...</button>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container b-shadow mt-2 ms-3 mb-3 col-sm-6 usersEnter" *ngIf="selectedCategorie">
+        <img src="../../assets/images/robot.png" width="10px" alt="Avatar">
+        <p class="mb-0">{{selectedCategorie.name}}</p>
+    </div>
+    <div class="container b-shadow mt-2 ms-3 mb-3 col-sm-8" *ngIf="selectedCategorie">
+        <img src="../../assets/images/robot.png" width="10px" alt="Avatar">
+        <div class="parent" *ngIf="!seeTheme"> <!-- div utiliser pour faire le loading -->
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <p *ngIf="seeTheme">Veuillez entrer le theme de votre site web (entrez uniquement le theme)</p>
+        <span class="time-right"></span>
+    </div>
+    <div class="container b-shadow mt-2 ms-3 mb-3 col-sm-6 usersEnter" *ngIf="selectedTheme[0]">
+        <img src="../../assets/images/robot.png" width="10px" alt="Avatar">
+        <div class="parent" *ngIf="!selectedTheme[0]">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <p class="mb-0" *ngIf="selectedTheme[0]" #theme>{{selectedTheme[0]}}</p>
+        <a  type="button" href="#input" class="btn btn-outline-light float-end" (click)="modifierTheme(0)">Modifier</a>
+    </div>
+
+
+    <!-- <p class="bulb bulb-head b-shadow" *ngIf="selectedCategorie">Vous avez choisi la catégorie : {{selectedCategorie}},
+                si ce n'est pas celui que vous vouliez vous pouvez la modifiez en recliquant sur la selection</p> -->
+    <div *ngIf="selectedTheme[0]" class="container b-shadow mt-2 ms-3 mb-3 col-sm-8">
+        <img src="../../assets/images/robot.png" width="10px" alt="Avatar">
+        <div class="parent" *ngIf="!seeTitle">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <p *ngIf="seeTitle">Entrez le nom de votre site : (entrez uniquement le titre du site s'il vous plait)</p>
+        <!-- <div class="theme">
+                <ul class="">
+                    <li class="bd-round b-shadow" role="button" *ngFor="let them of categorieThemes.themes"><a
+                        *ngIf="them.state">{{them.name}}</a></li>
+                    </ul>
+                </div> -->
+    </div>
+    <div class="container b-shadow mt-2 ms-3 mb-3 col-sm-6 usersEnter" *ngIf="selectedTheme[1]" #titre>
+        <img src="../../assets/images/robot.png" width="10px" alt="Avatar">
+        <p class="mb-0">{{selectedTheme[1]}}</p>
+        <a type="button" href="#input" class="btn btn-outline-light float-end" (click)="modifierTheme(1)">Modifier</a>
+        <span class="time-right"></span>
+    </div>
+    <div class="container b-shadow mt-2 ms-3 mb-3 col-sm-8" *ngIf="selectedTheme[1]">
+        <img src="../../assets/images/robot.png" width="10px" alt="Avatar">
+        <div class="parent" *ngIf="!fiText"> <!-- div utiliser pour faire le loading -->
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <p *ngIf="fiText" id="resume">Vous avez choisi la catégorie {{selectedCategorie.name}}, entré le theme {{selectedTheme[0]}}, et le nom {{selectedTheme[1]}}, si ces informations sont correctes appuyez entrer pour voir quelques exemples de templates</p>
+    </div>
+    <div *ngIf="template" id="template" class="container2 b-shadow mt-2 ms-3 mb-3 pb-3">
+        <app-template [showColor]="color"></app-template>
+    </div>
+    <div class="container b-shadow mt-2 ms-3 mb-3 col-sm-8" *ngIf="seeColor">
+        <img src="../../assets/images/robot.png" width="10px" alt="Avatar">
+        <div class="parent" *ngIf="!colored">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <p class="mb-0" *ngIf="colored"> Voulez vous modifiez les couleurs du template ? </p>
+        <a type="button" href="#color" class="btn float-end colorB" (click)="showColor()">Oui</a>
+        <a type="button" href="#formulaire" class="btn float-end colorB" (click)="startForm(temp)">Ignorer</a>
+        <span class="time-right"></span>
+    </div>
+    <div class="container2 b-shadow" *ngIf="color">
+        <div class="row text-center pb-3">
+            <h3 class="title3">CHOIX DE COULEURS</h3>
+            <div class="col-sm-4">
+                  <label for="favcolor" class="mt-2 mb-2 fs-4 fw-3">Couleur Primaire :</label><br>
+                  <input type="color" id="favcolor" value="#fcd7f9" class="">
+            </div>
+            <div class="col-sm-4">
+                  <label for="favcolor" class="mt-2 mb-2 fs-4 fw-3">Couleur Secondaire:</label><br>
+                  <input type="color" id="favcolor" value="#c738ba" class="">
+            </div>
+            <div class="col-sm-4">
+                  <label for="favcolor" class="mt-2 mb-2 fs-4 fw-3">Couleur Tertiaire:</label><br>
+                  <input type="color" id="favcolor" value="#840378" class="">
+            </div>
+        </div>
+        <a href="#formulaire" class="btn float-end colorB" (click)="startForm(temp)">Terminer</a>
+  </div>
+    <form (ngSubmit)="themer()" id="input" class="inputDiscussion position-relative">
+        <div><input type="text" placeholder="Entrer votre texte "
+                class="form-control form-control-lg disabled" [(ngModel)]="inputValue" name="inputValue" id="input" [disabled]="able"> <a
+                type="button"
+                href="#input"
+                class="btn buttonChat fas fa-paper-plane" (click)="themer()"></a></div>
+    </form>
+</div>
+<script>
+    let choice = document.getElementById('choice');
+    console.log(choice);
+</script>
+

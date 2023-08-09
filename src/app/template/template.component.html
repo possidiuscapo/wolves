@@ -1,0 +1,84 @@
+<!-- carousel.component.html -->
+<h2>Choix du template</h2>
+<div class="parent" *ngIf="!patTemp"> <!-- div utiliser pour faire le loading -->
+      <div></div>
+      <div></div>
+      <div></div>
+</div>
+<div class="row mt-3 mb-3 px-2" *ngIf="patTemp"> <!--*ngIf="patTemp"-->
+      <div class="carousel-button col-sm-4">
+            <div id="c1" class="carousel slide" data-bs-ride="carousel">
+                  <!-- Indicators/dots -->
+                  <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#c1" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#c1" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#c1" data-bs-slide-to="2"></button>
+                  </div>
+                  <!-- The slideshow/carousel -->
+                  <div class="carousel-inner rounded">
+                        <div class="carousel-item active" *ngFor="let image of carousels[0].images">
+                              <img [src]="image.imageUrl" alt="Image {{ image.id }}" class="d-block w-100 rounded"
+                                    width="500">
+                        </div>
+                  </div>
+                  <!-- Left and right controls/icons -->
+                  <button class="carousel-control-prev" type="button" data-bs-target="#c1" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#c1" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                  </button>
+            </div>
+            <input type="radio" class="radioTemplate templateInput" name="chosedTemplate">
+      </div>
+      <div class="carousel-button col-sm-4">
+            <div id="c2" class="carousel slide" data-bs-ride="carousel">
+                  <!-- Indicators/dots -->
+                  <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#c2" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#c2" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#c2" data-bs-slide-to="2"></button>
+                  </div>
+                  <!-- The slideshow/carousel -->
+                  <div class="carousel-inner rounded">
+                        <div class="carousel-item active" *ngFor="let image of carousels[2].images">
+                              <img [src]="image.imageUrl" alt="Image {{ image.id }}" class="d-block w-100 rounded"
+                                    width="500">
+                        </div>
+                  </div>
+                  <!-- Left and right controls/icons -->
+                  <button class="carousel-control-prev" type="button" data-bs-target="#c2" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#c2" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                  </button>
+            </div>
+            <input type="radio" class="radioTemplate templateInput" name="chosedTemplate">
+      </div>
+      <div class="carousel-button col-sm-4">
+            <div id="c3" class="carousel slide" data-bs-ride="carousel">
+                  <!-- Indicators/dots -->
+                  <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#c3" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#c3" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#c3" data-bs-slide-to="2"></button>
+                  </div>
+                  <!-- The slideshow/carousel -->
+                  <div class="carousel-inner rounded">
+                        <div class="carousel-item active" *ngFor="let image of carousels[1].images">
+                              <img [src]="image.imageUrl" alt="Image {{ image.id }}" class="d-block w-100 rounded"
+                                    width="500">
+                        </div>
+                  </div>
+                  <!-- Left and right controls/icons -->
+                  <button class="carousel-control-prev" type="button" data-bs-target="#c3" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#c3" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                  </button>
+            </div>
+            <input type="radio" class="radioTemplate templateInput" name="chosedTemplate">
+      </div>
+</div>

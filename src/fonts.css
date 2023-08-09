@@ -1,0 +1,400 @@
+/***********************************/
+/* Déclaration de la police josefan*/
+/***********************************/
+
+/* Josefin Bold */
+@font-face {
+    font-family: Josefin;
+    src: url("assets/fonts/josefan/JosefinSans-Bold.ttf");
+    font-style: bold;
+    font-weight: 700;
+}
+
+/* Josefin Bold Italic */
+@font-face {
+    font-family: Josefin;
+    src: url("assets/fonts/josefan/JosefinSans-BoldItalic.ttf");
+    font-style: italic;
+    font-weight: 700;
+}
+
+/* Josefin Italic */
+@font-face {
+    font-family: Josefin;
+    src: url("assets/fonts/josefan/JosefinSans-Italic.ttf");
+    font-style: italic;
+    font-weight: 400;
+}
+
+/* Josefin Light */
+@font-face {
+    font-family: Josefin;
+    src: url("assets/fonts/josefan/JosefinSans-Light.ttf");
+    font-style: normal;
+    font-weight: 300;
+}
+
+/* Josefin Light Italic */
+@font-face {
+    font-family: Josefin;
+    src: url("assets/fonts/josefan/JosefinSans-LightItalic.ttf");
+    font-style: italic;
+    font-weight: 300;
+}
+
+/* Josefin Light Italic */
+@font-face {
+    font-family: Josefin;
+    src: url("assets/fonts/josefan/JosefinSans-Regular.ttf");
+    font-style: normal;
+    font-weight: 400;
+}
+
+/* Josefin Semi Bold */
+@font-face {
+    font-family: Josefin;
+    src: url("assets/fonts/josefan/JosefinSans-SemiBold.ttf");
+    font-style: normal;
+    font-weight: 600;
+}
+
+/* Josefin Semi Bold Italic */
+@font-face {
+    font-family: Josefin;
+    src: url("assets/fonts/josefan/JosefinSans-SemiBoldItalic.ttf");
+    font-style: italic;
+    font-weight: 600;
+}
+
+/* Josefin Thin */
+@font-face {
+    font-family: Josefin;
+    src: url("assets/fonts/josefan/JosefinSans-Thin.ttf");
+    font-style: normal;
+    font-weight: 100;
+}
+
+/* Josefin Thin */
+@font-face {
+    font-family: Josefin;
+    src: url("assets/fonts/josefan/JosefinSans-Thin.ttf");
+    font-style: normal;
+    font-weight: 100;
+}
+
+/* Josefin Thin */
+@font-face {
+    font-family: Josefin;
+    src: url("assets/fonts/josefan/JosefinSans-ThinItalic.ttf");
+    font-style: italic;
+    font-weight: 100;
+}
+
+
+
+/**************************************/
+/* Déclaration de la police Montserrat*/
+/**************************************/
+
+/* Montserrat Black */
+@font-face {
+    font-family: Montserrat;
+    src: url("assets/fonts/montserrat/Montserrat-Black.otf");
+    font-style: normal;
+    font-weight: 900;
+}
+
+/* Montserrat Black Italic */
+@font-face {
+    font-family: Montserrat;
+    src: url("assets/fonts/montserrat/Montserrat-BlackItalic.otf");
+    font-style: italic;
+    font-weight: 900;
+}
+
+/* Montserrat Bold */
+@font-face {
+    font-family: Montserrat;
+    src: url("assets/fonts/montserrat/Montserrat-Bold.otf");
+    font-style: normal;
+    font-weight: 700;
+}
+
+/* Montserrat Bold Italic */
+@font-face {
+    font-family: Montserrat;
+    src: url("assets/fonts/montserrat/Montserrat-BoldItalic.otf");
+    font-style: italic;
+    font-weight: 700;
+}
+
+/* Montserrat Extra Bold */
+@font-face {
+    font-family: Montserrat;
+    src: url("assets/fonts/montserrat/Montserrat-ExtraBold.otf");
+    font-style: normal;
+    font-weight: 800;
+}
+
+/* Montserrat Extra Bold Italic */
+@font-face {
+    font-family: Montserrat;
+    src: url("assets/fonts/montserrat/Montserrat-ExtraBoldItalic.otf");
+    font-style: italic;
+    font-weight: 800;
+}
+
+/* Montserrat Extra Light */
+@font-face {
+    font-family: Montserrat;
+    src: url("assets/fonts/montserrat/Montserrat-ExtraLight.otf");
+    font-style: normal;
+    font-weight: 200;
+}
+
+/* Montserrat Extra Light Italic */
+@font-face {
+    font-family: Montserrat;
+    src: url("assets/fonts/montserrat/Montserrat-ExtraLightItalic.otf");
+    font-style: italic;
+    font-weight: 200;
+}
+
+/* Montserrat Italic */
+@font-face {
+    font-family: Montserrat;
+    src: url("assets/fonts/montserrat/Montserrat-Italic.otf");
+    font-style: italic;
+    font-weight: 400;
+}
+
+/* Montserrat Light */
+@font-face {
+    font-family: Montserrat;
+    src: url("assets/fonts/montserrat/Montserrat-Light.otf");
+    font-style: normal;
+    font-weight: 300;
+}
+
+/* Montserrat Light Italic */
+@font-face {
+    font-family: Montserrat;
+    src: url("assets/fonts/montserrat/Montserrat-LightItalic.otf");
+    font-style: italic;
+    font-weight: 300;
+}
+
+/* Montserrat Medium */
+@font-face {
+    font-family: Montserrat;
+    src: url("assets/fonts/montserrat/Montserrat-Medium.otf");
+    font-style: normal;
+    font-weight: 500;
+}
+
+/* Montserrat Medium Italic */
+@font-face {
+    font-family: Montserrat;
+    src: url("assets/fonts/montserrat/Montserrat-MediumItalic.otf");
+    font-style: italic;
+    font-weight: 400;
+}
+
+/* Montserrat Regular */
+@font-face {
+    font-family: Montserrat;
+    src: url("assets/fonts/montserrat/Montserrat-Regular.otf");
+    font-style: italic;
+    font-weight: 400;
+}
+
+/* Montserrat SemiBold */
+@font-face {
+    font-family: Montserrat;
+    src: url("assets/fonts/montserrat/Montserrat-SemiBold.otf");
+    font-style: italic;
+    font-weight: 600;
+}
+
+/* Montserrat Semi Bold Italic */
+@font-face {
+    font-family: Montserrat;
+    src: url("assets/fonts/montserrat/Montserrat-SemiBold.otf");
+    font-style: italic;
+    font-weight: 600;
+}
+
+/* Montserrat Thin */
+@font-face {
+    font-family: Montserrat;
+    src: url("assets/fonts/montserrat/Montserrat-Thin.otf");
+    font-style: normal;
+    font-weight: 100;
+}
+
+/* Montserrat Thin Italic */
+@font-face {
+    font-family: Montserrat;
+    src: url("assets/fonts/montserrat/Montserrat-ThinItalic.otf");
+    font-style: italic;
+    font-weight: 100;
+}
+
+
+
+
+/***********************************/
+/* Déclaration de la police Poppins*/
+/***********************************/
+
+/* Poppins Black */
+@font-face {
+    font-family: Poppins;
+    src: url("assets/fonts/poppins/Poppins-Black.otf");
+    font-style: normal;
+    font-weight: 900;
+}
+
+/* Poppins Black Italic */
+@font-face {
+    font-family: Poppins;
+    src: url("assets/fonts/poppins/Poppins-BlackItalic.otf");
+    font-style: italic;
+    font-weight: 900;
+}
+
+/* Poppins Bold */
+@font-face {
+    font-family: Poppins;
+    src: url("assets/fonts/poppins/Poppins-Bold.otf");
+    font-style: normal;
+    font-weight: 700;
+}
+
+/* Poppins Bold Italic */
+@font-face {
+    font-family: Poppins;
+    src: url("assets/fonts/poppins/Poppins-BoldItalic.otf");
+    font-style: italic;
+    font-weight: 700;
+}
+
+/* Poppins Extra Bold */
+@font-face {
+    font-family: Poppins;
+    src: url("assets/fonts/poppins/Poppins-ExtraBold.otf");
+    font-style: normal;
+    font-weight: 800;
+}
+
+/* Poppins Extra Bold Italic */
+@font-face {
+    font-family: Poppins;
+    src: url("assets/fonts/poppins/Poppins-ExtraBoldItalic.otf");
+    font-style: italic;
+    font-weight: 800;
+}
+
+/* Poppins Extra Light */
+@font-face {
+    font-family: Poppins;
+    src: url("assets/fonts/poppins/Poppins-ExtraLight.otf");
+    font-style: normal;
+    font-weight: 200;
+}
+
+/* Poppins Extra Light Italic */
+@font-face {
+    font-family: Poppins;
+    src: url("assets/fonts/poppins/Poppins-ExtraLightItalic.otf");
+    font-style: italic;
+    font-weight: 200;
+}
+
+/* Poppins Italic */
+@font-face {
+    font-family: Poppins;
+    src: url("assets/fonts/poppins/Poppins-Italic.otf");
+    font-style: italic;
+    font-weight: 400;
+}
+
+/* Poppins Light */
+@font-face {
+    font-family: Poppins;
+    src: url("assets/fonts/poppins/Poppins-Light.otf");
+    font-style: normal;
+    font-weight: 300;
+}
+
+/* Poppins Light Italic */
+@font-face {
+    font-family: Poppins;
+    src: url("assets/fonts/poppins/Poppins-LightItalic.otf");
+    font-style: italic;
+    font-weight: 300;
+}
+
+/* Poppins Medium */
+@font-face {
+    font-family: Poppins;
+    src: url("assets/fonts/poppins/Poppins-Medium.otf");
+    font-style: normal;
+    font-weight: 500;
+}
+
+/* Poppins Medium Italic */
+@font-face {
+    font-family: Poppins;
+    src: url("assets/fonts/poppins/Poppins-MediumItalic.otf");
+    font-style: italic;
+    font-weight: 500;
+}
+
+/* Poppins Regular */
+@font-face {
+    font-family: Poppins;
+    src: url("assets/fonts/poppins/Poppins-Regular.otf");
+    font-style: normal;
+    font-weight: 400;
+}
+
+/* Poppins Semi Bold */
+@font-face {
+    font-family: Poppins;
+    src: url("assets/fonts/poppins/Poppins-SemiBold.otf");
+    font-style: normal;
+    font-weight: 600;
+}
+
+/* Poppins Semi Bold Italic */
+@font-face {
+    font-family: Poppins;
+    src: url("assets/fonts/poppins/Poppins-SemiBoldItalic.otf");
+    font-style: normal;
+    font-weight: 600;
+}
+
+/* Poppins Thin */
+@font-face {
+    font-family: Poppins;
+    src: url("assets/fonts/poppins/Poppins-SemiBoldItalic.otf");
+    font-style: normal;
+    font-weight: 100;
+}
+
+
+
+/***********************************/
+/* Déclaration de la police Poppins*/
+/***********************************/
+
+/* Tanker */
+@font-face {
+    font-family: Tanker;
+    src: url("assets/fonts/tanker/Tanker-Regular.ttf") format("true typeof"),
+        url("assets/fonts/tanker/Tanker-Regular.woff") format("woff"),
+        url("assets/fonts/tanker/Tanker-Regular.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 400;
+}
