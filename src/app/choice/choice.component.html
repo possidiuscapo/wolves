@@ -1,4 +1,4 @@
-<div class="wraper" id="choice">
+<div class="wraper" id="choice" #choice>
     <div class="title">
         <h1>Chatbot</h1>
     </div>
@@ -110,29 +110,29 @@
         </div>
         <p class="mb-0" *ngIf="colored"> Voulez vous modifiez les couleurs du template ? </p>
         <a type="button" href="#color" class="btn float-end colorB" (click)="showColor()">Oui</a>
-        <a type="button" href="#formulaire" class="btn float-end colorB" (click)="startForm(temp)">Ignorer</a>
+        <a type="button"  href="#formule" class="btn float-end colorB" (click)="startForm(temp); choices()">Ignorer</a>
         <span class="time-right"></span>
     </div>
     <div class="container2 b-shadow" *ngIf="color">
         <div class="row text-center pb-3">
-            <h3 class="title3">CHOIX DE COULEURS</h3>
+            <h3 class="title3" id="color">CHOIX DE COULEURS</h3>
             <div class="col-sm-4">
                 <label for="favcolor" class="mt-2 mb-2 fs-4 fw-3">Couleur Primaire :</label><br>
-                <input type="color" id="favcolor" value="#fcd7f9" class="">
+                <input type="color" id="favcolor" value="#fcd7f9" #input1>
             </div>
             <div class="col-sm-4">
                 <label for="favcolor" class="mt-2 mb-2 fs-4 fw-3">Couleur Secondaire:</label><br>
-                <input type="color" id="favcolor" value="#c738ba" class="">
+                <input type="color" id="favcolor" value="#c738ba" #input2>
             </div>
             <div class="col-sm-4">
                 <label for="favcolor" class="mt-2 mb-2 fs-4 fw-3">Couleur Tertiaire:</label><br>
-                <input type="color" id="favcolor" value="#840378" class="">
+                <input type="color" id="favcolor" value="#840378" #input3>
             </div>
         </div>
-        <a href="#formulaire" class="btn float-end colorB" (click)="startForm(temp)">Terminer</a>
+        <a  href="#formule" class="btn float-end colorB" (click)="startForm(temp); colorPaddle(); choices()">Terminer</a>
     </div>
-    <form (ngSubmit)="themer()" id="input" class="inputDiscussion position-relative">
-        <div><input type="text" placeholder="Entrer votre texte " class="form-control form-control-lg disabled"
+    <form (ngSubmit)="themer()" id="input" class="inputDiscussion position-relative" href="#input">
+        <div><input type="text" placeholder="Entrer votre texte " class="form-control form-control-lg disabled position-absolute"
                 [(ngModel)]="inputValue" name="inputValue" id="input" [disabled]="able"> <a type="button" href="#input"
                 class="btn buttonChat fas fa-paper-plane" (click)="themer()"></a></div>
     </form>

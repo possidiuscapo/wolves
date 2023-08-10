@@ -21,3 +21,13 @@ export interface Carousel {
       name: string;
       images: Image[];
 }
+export class Users{
+      constructor(
+            private firstName: string,
+            private lastName: string,
+            private email : string,
+            private category: string, 
+            private theme: string,
+            private siteName: string,
+            private colors:{primary?: string, secondary?: string, tertiary?: string},){};
+}

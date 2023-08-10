@@ -297,6 +297,11 @@ input[type=color] {
 .categorie .margin .buttn1{
   background-color: var(--color-primay);
 }
+#choice{
+  overflow-y: scroll;
+  height: 100vh;
+  scroll-behavior: smooth;
+}
 /********** Petit desktop *********/
 @media screen and (max-width: 1200px) and (min-width: 980px){
 
@@ -322,6 +327,12 @@ input[type=color] {
   }
 
 
+}
+#choice::-webkit-scrollbar{
+  display: none;
+}
+#choice::-moz-scrollbar{
+  display: none;
 }
 
 
