@@ -42,7 +42,6 @@ export class FormulaireComponent implements OnInit {
       newUser(){
             this.newUserInfo = new userInfos(this.prenom, this.nom, this.email);
             this.userInfo.emit(this.newUserInfo);
-            console.log(this.newUserInfo);
       }
 
       getUserInfo(): string | null {

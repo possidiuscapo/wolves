@@ -1,7 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ServiceService } from '../service.service';
-import { CAROUSELS } from '../mock';
-import { Carousel } from '../models';
+import { Users } from '../models';
 import { fadeInAnimation } from '../animation.module';
 import { userInfos } from '../user.Info';
 
@@ -15,8 +14,10 @@ import { userInfos } from '../user.Info';
 export class MainComponent implements OnInit{
   @Input() getStarted!: boolean;
   user!: userInfos;
+  usersChoice!: {category: string, siteName: string, theme: string, colors: {primary?: string, secondary?: string, tertiary?: string}} ;
   template: boolean = false;
   formulaire: boolean = false;
+  Users!: Users;
   constructor(private service : ServiceService){}
   ngOnInit(): void {
     window.scroll(10000, 0)
@@ -28,8 +29,18 @@ export class MainComponent implements OnInit{
   showform($event: any){
     this.formulaire = true;
   }
+  getObjectChoice($event:any){
+    this.usersChoice = $event;
+    console.log($event);
+    
+  }
   showUserInfos($event: userInfos){
-    this.user = $event
     console.log(this.user);    
+  }
+  createUsers($event: any){
+    this.user = $event
+    this.Users = new Users(this.user.firstName, this.user.lastName, this.user.mail, this.usersChoice.category, this.usersChoice.theme, this.usersChoice.siteName, this.usersChoice.colors);
+    console.log(this.Users);
+     
   }
 }
