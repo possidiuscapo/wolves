@@ -13,10 +13,12 @@ import { userInfos } from '../user.Info';
 })
 export class MainComponent implements OnInit{
   @Input() getStarted!: boolean;
+  @Input() darkmode!: boolean;
   user!: userInfos;
   usersChoice!: {category: string, siteName: string, theme: string, colors: {primary?: string, secondary?: string, tertiary?: string}} ;
   template: boolean = false;
   formulaire: boolean = false;
+  // darkShare!: boolean;
   Users!: Users;
   constructor(private service : ServiceService){}
   ngOnInit(): void {
@@ -42,5 +44,5 @@ export class MainComponent implements OnInit{
     this.Users = new Users(this.user.firstName, this.user.lastName, this.user.mail, this.usersChoice.category, this.usersChoice.theme, this.usersChoice.siteName, this.usersChoice.colors);
     console.log(this.Users);
      
-  }
+}
 }

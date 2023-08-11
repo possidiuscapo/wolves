@@ -171,13 +171,11 @@ div.carousel-item img {
 
 @keyframes loader-animation {
   from {
-    transform: scale(1.5);
-    background-color: rgb(0, 0, 0, .7);
+    transform: translateY(-10px);
   }
 
   to {
-    transform: scale(1);
-    background-color: rgba(0, 0, 0, 0.5);
+    transform: translateY(0px);
   }
 }
 
@@ -218,4 +216,24 @@ div.carousel-item img {
 .carousel:hover>div {
   transform: scale(1.05);
   border-radius: 0.2rem;
+}
+.whitemode{
+color:var(--dark);
+background-color: var(--white);
+}
+.darkmode{
+color:var(--white);
+background-color:var(--dark);
+}
+.wcolor{
+color:var(--white) !important;
+}
+.dcolor{
+color: var(--dark)!important;
+}
+.wbgc{
+background-color:var(--white) !important;
+}
+.dbgc{
+background-color: var(--dark) !important;
 }

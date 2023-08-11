@@ -1,6 +1,6 @@
 <div class="container2 container" [ngClass]="{'taille' : getStarted}" *ngIf="getStarted">
-    <div class="chat b-shadow contain">
-        <app-choice (templ)="showform($event)" class="bg-blur" (choiceData)="getObjectChoice($event)"></app-choice>
+    <div class="chat b-shadow contain" [ngClass]="{'darkmode' : darkmode, 'whitemode' : !darkmode}">
+        <app-choice (templ)="showform($event)" class="bg-blur" (choiceData)="getObjectChoice($event)" [darkmode]="darkmode"></app-choice>
     </div>
     <app-formulaire *ngIf="formulaire" class="contain2" (userInfo)="createUsers($event)"></app-formulaire>
 </div>

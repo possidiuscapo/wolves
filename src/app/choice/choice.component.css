@@ -7,7 +7,29 @@
   --color-primay : #840378;
   --color-secondary : #c738ba;
   --color-tertiary : #fcd7f9;
+  --white : #f1f1f1;
+  --dark:  #0e0e0e;
 }
+.whitemode{
+  color:var(--dark);
+  background-color: var(--white);
+  }
+  .darkmode{
+  color:var(--white);
+  background-color:var(--dark);
+  }
+  .wcolor{
+  color:var(--white) !important;
+  }
+  .dcolor{
+  color: var(--dark)!important;
+  }
+  .wbgc{
+  background-color:var(--white) !important;
+  }
+  .dbgc{
+  background-color: var(--dark) !important;
+  }
 /* Modification des bulbes de conversation */
 .wraper {
   line-height: 1.6;
@@ -28,44 +50,11 @@
   margin-bottom: 0.5rem;
   overflow: auto;
 }
-
-.bulb {
-  display: inline-block;
-  margin-bottom: 0.1rem;
-  margin-left: 0.2rem;
-  padding: 0.2rem 0.8em;
-  font-size: 1.5rem;
-  color: var(--color-primay);
-  line-height: 1.4;
-  background-color: #ffffff;
-}
-
-/* .rounded{
-
-} */
 .b-shadow {
   box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(10px);
 
 }
-
-.bd-rounded {
-  border-radius: 1.5rem 1.5rem 1.5rem 0rem;
-}
-
-
-.bulb-head {
-  border-radius: 0px 25px 25px 0px;
-}
-
-.bulb-center {
-  border-radius: 0px 25px 25px 0px;
-}
-
-.bulb-foot {
-  border-radius: 0px 25px 25px 25px;
-}
-
 /* Modification des catégories de site */
 ul {
   list-style: none;
@@ -125,7 +114,6 @@ ul {
 /* Chat containers */
 .container {
   /* border: 2px solid #dedede; */
-  background-color: #f1f1f1;
   border-radius: 5px;
   padding: 10px;
   font-family: 'Poppins';
@@ -138,7 +126,6 @@ ul {
 }
 .container2 {
   /* border: 2px solid #dedede; */
-  background-color: #f1f1f1;
   border-radius: 5px;
   /* padding: 10px; */
   padding-top: 0;
@@ -188,19 +175,6 @@ ul {
   margin-left: 20px;
   margin-right: 0;
 }
-
-/* Style time text */
-.time-right {
-  float: right;
-  color: #aaa;
-}
-
-/* Style time text */
-.time-left {
-  float: left;
-  color: #999;
-}
-
 .parent {
   display: flex;
   gap: .5rem;
@@ -235,12 +209,10 @@ ul {
 @keyframes loader-animation {
   from {
     transform: scale(1.5);
-    background-color: rgb(0, 0, 0, .7);
   }
 
   to {
     transform: scale(1);
-    background-color: rgba(0, 0, 0, 0.5);
   }
 }
 

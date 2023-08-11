@@ -8,9 +8,13 @@ import { Component } from "@angular/core";
 export class AppComponent {
       sendedStart!: boolean;
       title = 'projet_wolves';
+      darkParent: boolean = false;
       sendToChild($event: boolean){
             this.sendedStart = $event;
             console.log(this.sendedStart);
             
+      }
+      sendDarkMode($event: boolean){
+            this.darkParent = $event;
       }
 }

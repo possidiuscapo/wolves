@@ -15,6 +15,7 @@ export class TemplateComponent implements OnInit{
       color: boolean = false;
       patTemp:boolean =  false;
       template!: string;
+      darkmode: boolean = true;
       constructor(
             private service: ServiceService,
       ) { }

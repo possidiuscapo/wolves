@@ -10,7 +10,9 @@ import { ServiceService } from '../service.service';
 })
 export class HeaderComponent implements OnInit {
   start: boolean = true;
+  darkmode: boolean = false;
   @Output() starte: EventEmitter<boolean> = new EventEmitter();
+  @Output() dark: EventEmitter<boolean> = new EventEmitter();
   newSentences: string = "";
   constructor(private service : ServiceService){}
   writter(sentences: string){
@@ -24,6 +26,10 @@ export class HeaderComponent implements OnInit {
         i++;
       }
     }, 70);
+  }
+  darker(){
+    this.darkmode = !this.darkmode;
+    this.dark.emit(this.darkmode);
   }
   started(start: boolean){
     this.starte.emit(start);

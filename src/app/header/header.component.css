@@ -1,9 +1,6 @@
 .header {
     position: relative;
-    background-image: url("../../assets/images/bg2.jpg");
     /* background-position: center; */
-    background-size: cover;
-    background-repeat: no-repeat;
     height: 100vh;
     max-width: 100%;
     padding-top: 0.5rem;
@@ -12,6 +9,18 @@
     color: white;
 }
 
+.btn {
+    font-size: 2rem;
+    position: absolute;
+    right: 10%;
+}
+
+.darkmode {
+    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../../assets/images/header-background.jpg")center center no-repeat;
+}
+/* .whitemode{
+
+} */
 .header ul {
     display: flex;
     align-items: center;
@@ -45,8 +54,16 @@
     text-transform: uppercase;
 }
 
-.block{
+.block {
     margin-left: 5rem;
+}
+
+.wcolor {
+    color: var(--white) !important;
+}
+
+.dcolor {
+    color: var(--dark) !important;
 }
 
 .header h2,
@@ -61,7 +78,7 @@ p {
 
 .texte2 {
     font-size: 1.7rem;
-    color: #bd7cd7;
+    color:var(--color-secondary);
     font-family: Poppins;
 }
 
@@ -89,7 +106,7 @@ p {
 
 .logo img {
     width: 20%;
-    
+
     /* mix-blend-mode: ; */
 
 }
@@ -107,7 +124,7 @@ p {
 }
 
 .button a {
-    background-image: linear-gradient( to right, #53048c  50%, #04589d);
+    background-image: linear-gradient(to right, #53048c 50%, #04589d);
     color: #cfc2e2;
     font-size: 1em;
     font-weight: 600;
@@ -131,15 +148,17 @@ p {
 
 
 /********** Petit desktop *********/
-@media screen and (max-width: 1200px) and (min-width: 981px){
+@media screen and (max-width: 1200px) and (min-width: 981px) {
 
     .texte2 {
         width: 100%;
         font-size: 1rem;
     }
-    .contenue{
+
+    .contenue {
         width: 60%;
     }
+
     .contenue h1 {
         font-size: 1.5rem;
         margin-bottom: 0.8rem;
@@ -148,7 +167,7 @@ p {
         text-transform: uppercase;
     }
 
-    .button a{
+    .button a {
         font-size: 1rem;
     }
 }
@@ -157,7 +176,7 @@ p {
 /********** Tablette *********/
 @media screen and (max-width: 980px) and (min-width: 531px) {
 
-    .block{
+    .block {
         margin: 1rem;
         margin-left: 1rem;
     }
@@ -182,7 +201,7 @@ p {
 /********** Mobile *********/
 @media screen and (max-width: 530px) {
 
-    .block{
+    .block {
         margin: 1rem;
     }
 
@@ -191,7 +210,7 @@ p {
         padding-left: 0;
         width: 100%;
     }
-    
+
     .contenue h1 {
         font-size: 1.5rem;
         margin-top: 1.5rem;
@@ -206,11 +225,10 @@ p {
     .header ul {
         text-align: center;
     }
-    
-    .header ul img{
+
+    .header ul img {
         margin-block: 2rem;
         width: 50%;
     }
 
 }
-

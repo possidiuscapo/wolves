@@ -2,15 +2,34 @@
     /* max-width: 1300px; */
     margin: 0.5rem auto;
     width: 80%;
-    background-color: white;
-    background-image: url(src/assets/images/banner_with_low_poly_design_2305.jpg);
     background-repeat: no-repeat;
     /* margin: 2rem; */
     background-size: cover;
     border-radius: 1rem;
 }
 
-
+.whitemode{
+    color:#0e0e0e;
+    background-image: url(src/assets/images/banner_with_low_poly_design_2305.jpg);
+    background-color: #f1f1f1;
+}
+.darkmode{
+    color: #f1f1f1;
+    background-color:#0e0e0e;
+    background-image: url(src/assets/images/bg-header1.jpg);
+  }
+  .wcolor{
+    color:#f1f1f1 !important;
+  }
+  .dcolor{
+    color: #0e0e0e !important;
+  }
+  .wbgc{
+    background-color: #f1f1f1 !important;
+  }
+  .dbgc{
+    background-color: #0e0e0e !important;
+  }
 
 .container2{
     max-width: 100%;

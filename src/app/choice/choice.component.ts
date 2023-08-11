@@ -1,4 +1,4 @@
-import { Component, ElementRef, EventEmitter, OnChanges, OnInit, Output, Renderer2, ViewChild } from '@angular/core';
+import { Component, ElementRef, EventEmitter, Input, OnChanges, OnInit, Output, Renderer2, ViewChild } from '@angular/core';
 // import { fadeInAnimation } from '../animation.module';
 import { Categorie, SousThemes, Themes } from '../categorie';
 import { CATEGORIES, THEMES } from '../mock.categorie';
@@ -22,6 +22,7 @@ import { DatePipe } from '@angular/common';
     // animations: [fadeInAnimation]
 })
 export class ChoiceComponent implements OnInit {
+    @Input() darkmode: boolean = true;
     constructor(
         private service: ServiceService,
         private renderer: Renderer2
@@ -35,6 +36,7 @@ export class ChoiceComponent implements OnInit {
         // window.scroll(0, container.scrollHeight)
         container.scrollTop= container.scrollHeight
         console.log(container.scrollTop);
+        console.log(container.scrollHeight);
     }
     @Output() form: EventEmitter<boolean> = new EventEmitter();
     @Output() templ: EventEmitter<boolean> = new EventEmitter();

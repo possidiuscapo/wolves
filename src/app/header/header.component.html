@@ -1,10 +1,9 @@
-<header class="header" [@fadeInAnimation]>
+<header class="header" [@fadeInAnimation] [ngClass]="{'darkmode': darkmode, 'whitemode': !darkmode}">
+<button [ngClass]="{'fa-solid fa-moon wcolor': darkmode, 'fas fa-sun dcolor': !darkmode}" (click)="darker()" class="btn"></button>
     <nav [@fadeInAnimation] class="container-fluid">
-        <ul>
             <div class="logo">
-                <li><a href="../header/header.component.html"><img src="../../assets/logo/logo12.png"></a></li>
+                <a href="../header/header.component.html"><img src="../../assets/logo/logo12.png"></a>
             </div>
-        </ul>
     </nav>
 
     <div class="contenue">
