@@ -1,0 +1,6 @@
+.darkmode{
+    background-color: var(--dark);
+}
+.whitemode{
+    background-color: var(--white);
+}

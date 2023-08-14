@@ -2,14 +2,15 @@
 
 /* You can add global styles to this file, and also import other style files */
 :root {
-    --color-primay: #911184;
-    --color-secondary: #c738ba;
+    --color-primay:#c28304;
+    --color-secondary:#e4bb07;
     --color-tertiary: #f9e5f7;
+    --dark: #3c3b3b ;
+    --white: #d3d1d1 ;
 }
 
 body {
     margin: 0;
-    background-color: var(--color-tertiary);
     backdrop-filter: blur(8);
 }
 

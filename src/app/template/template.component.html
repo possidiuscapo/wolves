@@ -1,9 +1,9 @@
 <!-- carousel.component.html -->
 <h2>Choix du template</h2>
 <div class="parent" *ngIf="!patTemp"> <!-- div utiliser pour faire le loading -->
-      <div></div>
-      <div></div>
-      <div></div>
+      <div [ngClass]="{'darkmode': !darkmode, 'whitemode' : darkmode}"></div>
+      <div [ngClass]="{'darkmode': !darkmode, 'whitemode' : darkmode}"></div>
+      <div [ngClass]="{'darkmode': !darkmode, 'whitemode' : darkmode}"></div>
 </div>
 <div class="row mt-3 mb-3 px-2" *ngIf="patTemp"> <!--*ngIf="patTemp"-->
       <div class="carousel-button col-sm-4 shadow">
