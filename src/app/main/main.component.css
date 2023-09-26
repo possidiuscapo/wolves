@@ -11,7 +11,7 @@
 .whitemode{
     color:#0e0e0e;
     background-image: url(src/assets/images/banner_with_low_poly_design_2305.jpg);
-    background-color: #f1f1f1;
+    background-color: #ecbb92;
 }
 .darkmode{
     color: #f1f1f1;
@@ -25,7 +25,7 @@
     color: #0e0e0e !important;
   }
   .wbgc{
-    background-color: #f1f1f1 !important;
+    background-color: #f3b875 !important;
   }
   .dbgc{
     background-color: #0e0e0e !important;

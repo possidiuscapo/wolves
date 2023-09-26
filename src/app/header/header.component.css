@@ -16,11 +16,12 @@
 }
 
 .darkmode {
-    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../../assets/images/header-background.jpg")center center no-repeat;
+    background: url("../../assets/images/header-background.jpg") center center no-repeat;
 }
-/* .whitemode{
+.whitemode{
+    background: url("../../assets/images/bg2.jpg") 100% center no-repeat;
 
-} */
+}
 .header ul {
     display: flex;
     align-items: center;
@@ -78,7 +79,7 @@ p {
 
 .texte2 {
     font-size: 1.7rem;
-    color:var(--color-secondary);
+    color: var(--color-secondary);
     font-family: Poppins;
 }
 
@@ -106,8 +107,6 @@ p {
 
 .logo img {
     width: 20%;
-
-    /* mix-blend-mode: ; */
 
 }
 
